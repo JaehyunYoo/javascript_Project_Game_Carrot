@@ -1,0 +1,133 @@
+body{
+    text-align: center;
+    margin:0;
+    padding:0;
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+button{
+    border:0;
+    outline: none;
+    cursor: pointer;
+}
+.header{
+    
+    width:800px;
+    margin: auto;
+    background: #D38312;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #A83279, #D38312);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #A83279, #D38312); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    font-size:35px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 0 0 20px 20px;
+}
+.game__container{
+    position: relative;
+    width:800px;
+    height:500px;
+    margin:auto;
+    background: url(../img/background.png) center/cover;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+.game__header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px;
+}
+.game__button{
+    width:60px;
+    height:60px;
+    background-color: wheat;
+    border:4px solid black;
+    font-size:24px;
+    transition: transform 300ms ease-in;
+}
+.game__button:hover{
+    transform: scale(1.1);
+}
+
+.game__timer{
+    width:100px;
+    background-color: blanchedalmond;
+    text-align: center;
+    border:5px solid #000;
+    font-size:32px;
+    margin-top:8px;
+    border-radius: 20px;
+    visibility: hidden;
+    user-select: none;
+}
+.game__score{
+    margin-top:8px;
+    width:50px;
+    height:50px;
+    font-size:35px;
+    background-color: darksalmon;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 100%;
+    color:#fff;
+    border: 3px solid black;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+
+}
+
+.game__field{
+    position: relative;
+    width:100%;
+    height: 100%;
+    margin-top:40px;
+    border-radius: 0 0 20px 20px;
+}
+
+.pop_up{
+   position: absolute;
+   top:50%;
+   left:50%;
+   transform: translate(-50%,-50%);
+    display: block;
+    width:400px;
+    height:140px;
+    margin: auto;
+    padding:20px;
+    background-color: rgba(5, 202, 120, 0.514);
+    border-radius: 20px;
+    color:#fff;
+    text-align: center;
+    /* transform: translateY(-150%); */
+
+    
+}
+.pop-up--hide{
+    display: none;
+}
+.pop_up__refresh{
+    width:60px;
+    height:60px;
+    font-size:24px;
+    background-color: wheat;
+    border:2px solid black;
+    border-radius: 50%;
+}
+.pop_up__meassage{
+    display: block;
+    font-size:38px;
+}
+.carrot:hover,
+.bug:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
