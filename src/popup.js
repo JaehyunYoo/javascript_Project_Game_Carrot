@@ -20,6 +20,7 @@ export default class PopUp {
     this.popUpMsg.innerText = text;
     this.popUp.classList.remove("pop-up--hide");
   }
+  
   hide(){
       this.popUp.classList.add("pop-up--hide");
      

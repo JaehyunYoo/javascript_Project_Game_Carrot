@@ -26,8 +26,8 @@ export class GameBuilder{
 
     build(){
         return new Game(
-            this.withGameDuration,//
-            this.withCarrotCount,//
+            this.withGameDuration,
+            this.withCarrotCount,
             this.withBugCount
         );
     }

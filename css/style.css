@@ -9,11 +9,13 @@ body{
     align-items: center;
     min-height: 100vh;
 }
+
 button{
     border:0;
     outline: none;
     cursor: pointer;
 }
+
 .header{
     
     width:800px;
@@ -27,6 +29,7 @@ background: linear-gradient(to right, #A83279, #D38312); /* W3C, IE 10+/ Edge, F
     color: #fff;
     border-radius: 0 0 20px 20px;
 }
+
 .game__container{
     position: relative;
     width:800px;
@@ -37,12 +40,14 @@ background: linear-gradient(to right, #A83279, #D38312); /* W3C, IE 10+/ Edge, F
     flex-direction: column;
     border-radius: 20px;
 }
+
 .game__header{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding:20px;
 }
+
 .game__button{
     width:60px;
     height:60px;
@@ -51,6 +56,7 @@ background: linear-gradient(to right, #A83279, #D38312); /* W3C, IE 10+/ Edge, F
     font-size:24px;
     transition: transform 300ms ease-in;
 }
+
 .game__button:hover{
     transform: scale(1.1);
 }
@@ -66,6 +72,7 @@ background: linear-gradient(to right, #A83279, #D38312); /* W3C, IE 10+/ Edge, F
     visibility: hidden;
     user-select: none;
 }
+
 .game__score{
     margin-top:8px;
     width:50px;
@@ -82,7 +89,6 @@ background: linear-gradient(to right, #A83279, #D38312); /* W3C, IE 10+/ Edge, F
     align-items: center;
     justify-content: center;
     user-select: none;
-
 }
 
 .game__field{
@@ -94,10 +100,10 @@ background: linear-gradient(to right, #A83279, #D38312); /* W3C, IE 10+/ Edge, F
 }
 
 .pop_up{
-   position: absolute;
-   top:50%;
-   left:50%;
-   transform: translate(-50%,-50%);
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
     display: block;
     width:400px;
     height:140px;

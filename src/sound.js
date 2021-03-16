@@ -9,15 +9,19 @@ const winSound = new Audio('sound/game_win.mp3');
 export function PlayCarrot(){
     playSound(carrotSound);
 }
+
 export function Playbug(){
     playSound(bugSound);
 }
+
 export function PlayAlert(){
     playSound(alertSound);
 }
+
 export function PlayWin(){
     playSound(winSound);
 }
+
 export function PlayBackground(){
     playSound(bgSound);
 }
@@ -30,6 +34,7 @@ function playSound(sound){
     sound.currentTime = 0;
     sound.play();
 }
+
 function stopSound(sound){
     sound.pause();
 }

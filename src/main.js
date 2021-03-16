@@ -15,6 +15,7 @@ const game = new GameBuilder()
 gameFinishPopUp.setClickListener(() => {
     game.start();
 });
+
 game.setGameStopListener((reason) => {
     let message;
     switch(reason){
@@ -29,7 +30,8 @@ game.setGameStopListener((reason) => {
         break;
         default:
             throw new Error('not valid reson');
-    }
+    }ß
+
     gameFinishPopUp.showWithText(message);
 });
 
